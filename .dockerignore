@@ -1,0 +1,9 @@
+_build/
+deps/
+.git/
+.gitignore
+Dockerfile
+README*
+test/
+# priv/
+.elixir_ls

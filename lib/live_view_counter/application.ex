@@ -9,7 +9,8 @@ defmodule LiveViewCounter.Application do
     # List all child processes to be supervised
     children = [
       # Start the endpoint when the application starts
-      LiveViewCounterWeb.Endpoint
+      LiveViewCounterWeb.Endpoint,
+      {Phoenix.PubSub, [name: LiveViewCounter.PubSub, adapter: Phoenix.PubSub.PG2]}
       # Starts a worker by calling: LiveViewCounter.Worker.start_link(arg)
       # {LiveViewCounter.Worker, arg},
     ]
