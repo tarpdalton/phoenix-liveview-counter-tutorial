@@ -10,7 +10,7 @@ use Mix.Config
 # which you should run after static files are built and
 # before starting your production server.
 config :live_view_counter, LiveViewCounterWeb.Endpoint,
-  url: [scheme: "https", host: "ex.jdd.dev", port: 443],
+  url: [scheme: "https", host: "networth.dev", port: 443],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
 # Do not print debug messages in production
